@@ -5,19 +5,18 @@ Welcome to the Exam Announcement API! This API allows administration to manipula
 The API has the following endpoints:
 
 Client side
-  POST /signup
-  POST /signin
-  POST /forgot-password
-  GET /reset-password
-  POST /reset-password
-  GET /exam_announcements
-
+POST /signup: Create a new user account
+POST /signin: Sign in to an existing user account
+POST /forgot-password: Request a password reset
+GET /reset-password: Reset a password
+POST /reset-password: Confirm password reset
+GET /exam_announcements: Retrieve a list of all published exam announcements
 Admin side
-  POST /api/announcements
-  GET /api/announcements
-  GET /api/announcements/published
-  PUT /api/announcements/:id
-  DELETE /api/announcements/:id
-  DELETE /api/announcements
-  POST /api/announcements
-  GET /api/announcements
+POST /api/announcements: Create a new exam announcement
+GET /api/announcements: Retrieve a list of all exam announcements
+GET /api/announcements/published: Retrieve a list of all published exam announcements
+PUT /api/announcements/:id: Update an existing exam announcement by its ID
+DELETE /api/announcements/:id: Delete an existing exam announcement by its ID
+DELETE /api/announcements: Delete all exam announcements
+POST /api/announcements: Publish an exam announcement
+GET /api/announcements: Retrieve a list of all exam announcements
